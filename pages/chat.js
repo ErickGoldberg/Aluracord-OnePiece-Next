@@ -173,6 +173,7 @@ export default function ChatPage() {
                                     event.preventDefault();
                                     console.log(event);
                                     handleNovaMensagem(mensagem);
+                                    window.location.reload(true);
                                 }
                             }}
 
@@ -195,6 +196,7 @@ export default function ChatPage() {
                             onStickerClick={(sticker) => {
                                 console.log('Salva esse sticker no banco', sticker);
                                 handleNovaMensagem(':sticker: ' + sticker)
+                                window.location.reload(true);
                             }}
                         />
 
