@@ -8,9 +8,8 @@ import { createClient } from '@supabase/supabase-js';
 import { useRouter } from 'next/router';
 import {ButtonSendSticker} from '../src/components/ButtonSendSticker';
 
-
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0MzMyNTQ4NiwiZXhwIjoxOTU4OTAxNDg2fQ.AhfsDrs5EjNrd569rOAbXuKpbqYpZ40OLiJ8ilGdZOc';
-const SUPABASE_URL = 'https://rjcsmpltyhswflalkqci.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR5ZGhyYnl3Z3FsbmhjdHVycm1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njc3NDgyMjEsImV4cCI6MTk4MzMyNDIyMX0.QboRIynE_XYwK3_mAbAgRDw4YNSsPnOwy6k9AtTB85A'
+const SUPABASE_URL = 'https://tydhrbywgqlnhcturrmc.supabase.co'
 const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 function escutaMensagemEmTempoReal(adcionaMensagem){
