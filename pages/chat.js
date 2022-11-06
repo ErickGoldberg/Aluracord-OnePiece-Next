@@ -24,16 +24,7 @@ function escutaMensagemEmTempoReal(adcionaMensagem){
 export default function ChatPage() {
     const [mensagem, setMensagem] = React.useState('');
     const [listaDeMensagens, setListaMensagens] = React.useState([
-        // {
-        //     id:1,
-        //     de: 'developer-fernanda',
-        //     texto: ':sticker: https://www.alura.com.br/imersao-react-4/assets/figurinhas/Figurinha_2.png',
-        // },
-        // {
-        //     id:2,
-        //     de: 'peas',
-        //     texto: 'test',
-        // }
+
     ]);
     const roteamento = useRouter();
     const usuarioLogado = roteamento.query.username;
@@ -49,10 +40,6 @@ export default function ChatPage() {
             });
             escutaMensagemEmTempoReal((novaMensagem)=>{
                 console.log('Nova Mensagem', novaMensagem);
-                if(usuarioLogado != novaMensagem.de){
-                    let audio = new Audio(appConfig.soundMiranha);
-                    audio.play();
-                }
                 setListaMensagens((valorAtualDaLista)=>{
                     return[
                         novaMensagem,
