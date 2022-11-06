@@ -218,6 +218,7 @@ export default function ChatPage() {
                                 event.preventDefault();
                                 if (mensagem.length > 0) {
                                     handleNovaMensagem(mensagem);
+                                    window.location.reload(true);
                                 }
                             }}
                         />
