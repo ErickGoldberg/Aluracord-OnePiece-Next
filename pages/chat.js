@@ -90,7 +90,7 @@ export default function ChatPage() {
             <>
                 <Box styleSheet={{ width: '100%', display: 'flex',  alignItems: 'center', justifyContent: 'space-between' }} >
                     <Text variant='heading5'>
-                         MIRANHA {< FaSpider size={20} />} CHAT
+                    One Piece chat
                     </Text>
                     <Button
                         variant='tertiary'

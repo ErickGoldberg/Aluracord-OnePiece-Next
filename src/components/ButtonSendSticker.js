@@ -33,7 +33,7 @@ export function ButtonSendSticker(props) {
             backgroundColor: appConfig.theme.colors.background.fundoRed,
           } 
         }}
-        label="🕸"
+        label="☠️"
         onClick={() => setOpenState(!isOpen)}
       />
       {isOpen && (
@@ -62,7 +62,7 @@ export function ButtonSendSticker(props) {
             //   fontWeight: 'bold',
             }}
           >
-            Stickers 🕸
+            Stickers 
           </Text>
           <Box
             tag="ul"
